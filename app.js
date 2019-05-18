@@ -29,6 +29,16 @@ app.get("/tables", function(request, response) {
 });
 
 
+//---------------------------------------
+//AJAX
+
+$("id on submit").on("click", function (event){
+  $("#name").val().trim().push(table[0].name)
+  $("#phone-number").val().trim().push(table[0].phone_number)
+  $("#email").val().trim().push(table[0].email)
+  $("#unquie-id").val().trim().push(table[0].uniqueID)
+})
+
 
 app.listen(PORT, function() {
   console.log(PORT);
