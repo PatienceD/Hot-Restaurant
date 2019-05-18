@@ -20,6 +20,16 @@ app.get("/index", function(request, response) {
   response.sendFile(path.join(__dirname, "index.html"));
 });
 
+app.get("/reservations", function(request, response) {
+  response.sendFile(path.join(__dirname, "reservations.html"));
+});
+
+app.get("/tables", function(request, response) {
+  response.sendFile(path.join(__dirname, "tables.html"));
+});
+
+
+
 app.listen(PORT, function() {
   console.log(PORT);
 });
